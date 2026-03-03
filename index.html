@@ -1,34 +1,115 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 关键：适配微信等移动端 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XX婚礼请柬</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Microsoft Yahei", sans-serif;
+            background-color: #f8f5f0;
+            color: #333;
+        }
+        /* 海报容器 */
+        .poster {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+        }
+        .poster img {
+            width: 100%;
+            display: block;
+        }
+        /* 信息区域 */
+        .info {
+            padding: 20px;
+            text-align: center;
+        }
+        .title {
+            font-size: 24px;
+            margin: 15px 0;
+            color: #e63946;
+        }
+        .time-list {
+            margin: 20px 0;
+            text-align: left;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .time-item {
+            margin: 10px 0;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .time-item strong {
+            color: #d62828;
+        }
+        /* 表单按钮 */
+        .form-btn {
+            display: block;
+            width: 80%;
+            margin: 30px auto;
+            padding: 15px;
+            background-color: #e63946;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .form-btn:hover {
+            background-color: #d62828;
+        }
+        /* 底部说明 */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <!-- 海报区域 -->
+    <div class="poster">
+        <!-- 替换成你的请柬海报图片地址 -->
+        <img src="https://example.com/invitation-poster.jpg" alt="婚礼请柬海报">
+    </div>
 
-    <meta charset="utf-8">
-    <title>胡桃</title>
-    <link href="styles/style.css" rel="stylesheet">
-    <link href="https://fonts.font.im/css?family=Open+Sans" rel="stylesheet" type="text/css"> 
-    
-  </head>
-  <body>
-    <h1>一波送走！</h1>
-    <img src="images/胡桃.jpg" alt="胡桃是我老婆！">
-    <p>胡桃是我老婆！</p>
-    <ul>
-      <a href="属性.html">
-      <li>
-        属性
-      </li>
-    </a>
-      <li>
-        武器
-      </li>
-      <li>
-        天赋
-      </li>
-      <li>
-        命之座
-      </li>
-    </ul>
-  </body>
-  <button>切换用户</button>
-  <script src="scripts/main.js" defer></script>
-</html> 
+    <!-- 详细信息区域 -->
+    <div class="info">
+        <h1 class="title">诚邀您的莅临</h1>
+        
+        <div class="time-list">
+            <div class="time-item"><strong>婚礼日期：</strong>2026年5月20日</div>
+            <div class="time-item"><strong>接亲时间：</strong>上午9:00</div>
+            <div class="time-item"><strong>仪式时间：</strong>中午12:00</div>
+            <div class="time-item"><strong>宴席时间：</strong>下午13:30</div>
+            <div class="time-item"><strong>举办地点：</strong>XX市XX区XX酒店 XX宴会厅</div>
+        </div>
+
+        <!-- 表单入口按钮（替换成你的表单链接） -->
+        <a href="https://wj.qq.com/s2/xxxxxxx/" class="form-btn">
+            我要参加 · 填写信息
+        </a>
+    </div>
+
+    <div class="footer">
+        期待与您共度美好时光 ❤️
+    </div>
+
+    <!-- 微信分享优化（可选） -->
+    <script>
+        // 可添加微信JSSDK实现自定义分享标题/图片，新手可暂时忽略
+    </script>
+</body>
+</html>
